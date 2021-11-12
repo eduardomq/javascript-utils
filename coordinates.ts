@@ -1,4 +1,4 @@
-export function generateRandomCoordsByBounds(bounds: {minLon, maxLon, minLat, maxLat}, elements: number, precision = 3): number[] {
+export function generateRandomCoordsByBounds(bounds: {minLon, maxLon, minLat, maxLat}, elements: number, precision = 3): number[][] {
     const points = [];
 
     for (let i = 0; i <= elements; i++) {
@@ -11,3 +11,8 @@ export function generateRandomCoordsByBounds(bounds: {minLon, maxLon, minLat, ma
 
     return points;
 }
+
+/*
+Sample use for Iberian Peninsula
+*/
+generateRandomCoordsByBounds({minLon: -9.297, maxLon: 2.561, minLat: 36.442, maxLat: 43.587}, 200);
