@@ -1,7 +1,9 @@
 function generateExcelColumnsLetters(numOfColumns) {
+  const cols = [];
   for (let i = 0; i <= numOfColumns; i++)   {
-    console.log(excelColumnFromNumber(i));
+    cols.push(excelColumnFromNumber(i));
   }
+  console.log(cols.join('\n'));
 }
 
 
